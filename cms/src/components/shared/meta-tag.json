@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_meta_tags",
+  "info": {
+    "displayName": "MetaTag"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 20,
+      "required": true
+    }
+  },
+  "config": {}
+}

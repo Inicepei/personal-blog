@@ -1,0 +1,61 @@
+{
+  "kind": "singleType",
+  "collectionName": "abouts",
+  "info": {
+    "singularName": "about",
+    "pluralName": "abouts",
+    "displayName": "About"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "status_label": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 50,
+      "required": false
+    },
+    "full_name": {
+      "type": "string",
+      "minLength": 4,
+      "maxLength": 30,
+      "required": true
+    },
+    "profile_image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "bio": {
+      "type": "blocks",
+      "required": true
+    },
+    "tech_stack_title": {
+      "type": "string",
+      "default": "Tech Stack",
+      "minLength": 3,
+      "maxLength": 20,
+      "required": true
+    },
+    "tools": {
+      "type": "component",
+      "component": "shared.meta-tag",
+      "repeatable": true,
+      "required": true,
+      "min": 1
+    },
+    "cta_label": {
+      "type": "string",
+      "default": "Get in touch",
+      "minLength": 3,
+      "maxLength": 20,
+      "required": true
+    }
+  }
+}
