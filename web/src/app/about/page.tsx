@@ -59,7 +59,9 @@ export default async function About() {
               </Badge>
             ))}
           </div>
-          <Button className="w-fit text-lg py-5 px-6">{cta_label}</Button>
+          <Button className="w-fit text-lg py-5 px-6 cursor-pointer" asChild>
+            <a href="mailto:mikhailbelov737@gmail.com">{cta_label}</a>
+          </Button>
         </div>
       </section>
     </Container>
