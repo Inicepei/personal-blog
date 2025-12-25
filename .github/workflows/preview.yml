@@ -28,7 +28,7 @@ jobs:
   build-web:
     needs: changes
     if: ${{ needs.changes.outputs.web == 'true' }}
-    name: Build & Typecheck Web
+    name: Build Web
     runs-on: ubuntu-latest
     defaults:
       run:
